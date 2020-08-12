@@ -540,6 +540,10 @@ namespace Gameplay {
                     debug = not debug;
                     graded_density_graph.debug = not graded_density_graph.debug;
                     break;
+                // End song prematurely
+                case sf::Keyboard::Escape:
+                    song_finished = true;
+                    break;
                 default:
                     break;
                 }
